@@ -71,7 +71,7 @@ handle.addEventListener('click', function (event){
 	var entry = document.createElement("li");
 	lock_status.forEach(function (lock, index){
 		var status = document.createElement("div");
-		status.innerText = index+1;
+		status.innerHTML = index+1;
 		status.classList.add("lock");
 		status.classList.add("mini");
 		if (lock){
@@ -85,11 +85,11 @@ handle.addEventListener('click', function (event){
 	result_div.classList.add("mini");
 
 	if (success){
-		result_div.innerText = "Yes";
+		result_div.innerHTML = "Yes";
 		result_div.classList.add("yes");
 	}
 	else {
-		result_div.innerText = "No";
+		result_div.innerHTML = "No";
 		result_div.classList.add("no");
 	}
 
