@@ -8,8 +8,8 @@ var editor = CodeMirror.fromTextArea(document.getElementById("lock_code"), {
 , lineNumbers: true
 });
 
-editor.markText({line:0,ch:0}, {line:1,ch:null}, {className: "readonly", atomic: true, readOnly: true, inclusiveLeft: true, inclusiveRight: true});
-editor.markText({line:7,ch:0}, {line:8,ch:null}, {className: "readonly", atomic: true, readOnly: true, inclusiveLeft: true, inclusiveRight: true});
+editor.markText({line:0,ch:0}, {line:8,ch:null}, {className: "readonly", atomic: true, readOnly: true, inclusiveLeft: true, inclusiveRight: true});
+editor.markText({line:14,ch:0}, {line:15,ch:null}, {className: "readonly", atomic: true, readOnly: true, inclusiveLeft: true, inclusiveRight: true});
 
 window.Editor = editor;
 

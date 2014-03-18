@@ -31,8 +31,15 @@ html
 			h2 Locking Logic
 
 			textarea#lock_code.
+				/**
+				&#32;* This method determines whether the lock should open.
+				&#32;*
+				&#32;* The inputs switch1...switch4 are true when the toggle is yellow,
+				&#32;* and they are false when the toggle is gray.
+				&#32;*
+				&#32;*/
 				correct_combination = function (switch1, switch2, switch3, switch4){
-				&#32;&#32;var should_unlock = false;
+				&#32;&#32;var should_unlock = false; // By default, the lock should not open.
 				&#32;&#32;
 				&#32;&#32;if (switch1){
 				&#32;&#32;&#32;&#32;should_unlock = true;
