@@ -1,0 +1,44 @@
+doctype html5
+html
+	head
+		title Lock Playground
+		link(rel="stylesheet", href="app.css")
+	body
+		h1 Lock Playground
+
+		div#history
+			div.handle.mini#clear Clear
+			h2 Last 6 Attempts
+			ol#history_ol
+
+		div#levers
+			h2 Lock Mechanism
+
+			p.
+				Gray is off/false. Yellow is on/true.
+
+			div.lock#lock1 1
+
+			div.lock#lock2 2
+
+			div.lock#lock3 3
+
+			div.lock#lock4 4
+
+			div.handle#handle Try
+
+		div#code
+			h2 Locking Logic
+
+			textarea#lock_code.
+				correct_combination = function (switch1, switch2, switch3, switch4){
+				&#32;&#32;var should_unlock = false;
+				&#32;&#32;
+				&#32;&#32;if (switch1){
+				&#32;&#32;&#32;&#32;should_unlock = true;
+				&#32;&#32;}
+				&#32;&#32;
+				&#32;&#32;return should_unlock;
+				}
+
+		script(type="text/javascript", src="app.js")

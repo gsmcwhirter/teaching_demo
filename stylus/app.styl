@@ -1,0 +1,103 @@
+body
+	background-color #eee
+	color #343434
+	padding 40px 80px
+	font-size 13px
+	font-family "Helvetica Neue", "Lucida Grande", "Arial"
+
+h1, h2, h3
+	font-size 22px
+	font-weight bold
+
+h1
+	font-size 60px
+
+div#levers, div#history
+	h2
+		margin-top 0
+
+div#levers
+	width 60%
+	float left
+	clear left
+
+div#code
+	width 100%
+	clear both
+
+textarea#lock_code
+	width 95%
+	height 260px
+	margin-left 4em
+
+div#history
+	width 35%
+	height 210px
+	min-height 210px
+	max-height 250px
+	float right
+
+	ol, ol li
+		list-style none
+
+	ol
+		clear both
+
+	li
+		overflow auto
+		clear left
+		margin-bottom 5px
+
+	#clear
+		float right
+		width auto
+
+	h2
+		float left
+
+.lock, .handle
+		width 40px
+		height 40px
+		font-size 34px
+		font-weight bold
+		text-align center
+		padding 3px 5px
+		color #ccc
+		background-color #444
+		float left
+		margin-right 10px
+		cursor pointer
+		border 1px solid #000
+		border-radius 5px
+		-moz-border-radius 5px
+		-webkit-border-radius 5px
+
+		-webkit-user-select: none; /* webkit (safari, chrome) browsers */
+		-moz-user-select: none; /* mozilla browsers */
+		-khtml-user-select: none; /* webkit (konqueror) browsers */
+		-ms-user-select: none; /* IE10+ */
+
+.lock.mini, .handle.mini
+	width 16px
+	height 16px
+	font-size 12px
+	padding 2px
+
+.handle.mini
+	width 20px
+
+.handle
+	width 80px
+	background-color #008
+
+.lock.selected
+	background-color #880
+
+.handle.yes
+	background-color #080
+
+.handle.no
+	background-color #800
+
+.readonly
+	background-color #ddd
